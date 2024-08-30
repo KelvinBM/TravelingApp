@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Traveling.Core;
+using Traveling.Core.Domain;
 using Traveling.Persistence;
 
 namespace Traveling.Controllers
@@ -11,17 +13,16 @@ namespace Traveling.Controllers
     public class HomeController : Controller
     {
         //private readonly IUnitOfWork _unitOfWork;// require an instance of the interface to access the values from tables
-        private readonly UnitOfWork unitOfWork = new UnitOfWork(new TravelAppContext());// must be passed in constructor
-        //private readonly TravelAppContext _context;
-
+        private readonly TravelAppContext _context = new TravelAppContext();
         public HomeController()
         {
             //_unitOfWork = unitOfWork;
+            
         }
 
         public ActionResult Index()
         {
-            var tips = unitOfWork.Tips.GetAll();
+            var tips = _context.Tips;
             return View(tips);
         }
 
