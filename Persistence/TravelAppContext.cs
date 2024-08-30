@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using Traveling.Models;
+using Traveling.Core.Domain;
 using Traveling.Persistence.EntityConfigurations;
 
 namespace Traveling.Persistence
 {
     public class TravelAppContext : DbContext
     {
+
+        public TravelAppContext()
+        {
+            this.Configuration.LazyLoadingEnabled = false;
+        }
+
         public DbSet<Destination> Destinations { get; set; }
         public DbSet<Geography> Geographies { get; set; }
         public DbSet<Tip> Tips { get; set; }

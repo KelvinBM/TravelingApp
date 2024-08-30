@@ -1,0 +1,85 @@
+.my-header {
+    transform-style: preserve-3d;
+    width: 100%;
+    background-color: #0a375a;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0 0 35px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-nav-and-logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.my-logo-container {
+    align-self: center;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: serif;
+}
+
+.my-logo-container h1 {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#my-logo-one {
+    font-size: 55px;
+}
+
+#my-logo-two {
+    font-size: 10pt;
+}
+
+.my-nav-container {
+    width: 330px;
+    height: 30px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+.my-nav-link-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+.my-section-nav {
+    background-color: #ececec;
+    height: 25px;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.my-section-nav:hover {
+    cursor: default;
+}
+
+.my-section-nav-link {
+    border-left: 1px solid rgb(150, 150, 150);
+    padding: 0 10px;
+    height: fit-content;
+    color: #b2aed1;
+    text-decoration: none;
+    margin: 2px 0px 0 0px;
+}

@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Web;
 
-using Traveling.Models;
+using Traveling.Core.Domain;
 
 namespace Traveling.Persistence.EntityConfigurations
 {

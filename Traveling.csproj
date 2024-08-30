@@ -129,8 +129,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TipController.cs" />
+    <Compile Include="Core\Domain\Destination.cs" />
+    <Compile Include="Core\Domain\Geography.cs" />
+    <Compile Include="Core\Domain\Tip.cs" />
+    <Compile Include="Core\Domain\TravelCategory.cs" />
     <Compile Include="Core\IUnitOfWork.cs" />
     <Compile Include="Core\Repositories\IRepository.cs" />
+    <Compile Include="Core\Repositories\ITipRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -143,15 +148,12 @@
       <DependentUpon>202408271741375_InsertDataIntoTableTips.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\TravelCategory.cs" />
-    <Compile Include="Models\Geography.cs" />
-    <Compile Include="Models\Tip.cs" />
-    <Compile Include="Models\Destination.cs" />
     <Compile Include="Persistence\EntityConfigurations\DestinationConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\GeographyConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\TipConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\TravelCategoryConfiguration.cs" />
-    <Compile Include="Persistence\Repositories\IRepository.cs" />
+    <Compile Include="Persistence\Repositories\Repository.cs" />
+    <Compile Include="Persistence\Repositories\TipRepository.cs" />
     <Compile Include="Persistence\TravelAppContext.cs" />
     <Compile Include="Persistence\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -173,6 +175,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\MyCss\index.css" />
+    <Content Include="Content\MyCss\my-css-file.css" />
+    <Content Include="Content\MyCss\my-nav.css" />
+    <Content Include="Content\MyCss\my-reset.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -207,10 +213,11 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\MyCss\" />
+    <Folder Include="Models\" />
     <Folder Include="Scripts\MyScripts\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Tip\" />

@@ -1,7 +1,26 @@
-﻿@{
+﻿@*the model must be at the top of the page*@
+
+@using Traveling.Persistence.Repositories;
+@using Traveling.Persistence;
+@using Traveling.Core.Domain;
+@using Traveling.Core.Repositories;
+
+@{
     ViewBag.Title = "Home Page";
+
 }
 
+<div class="my-left-aside-container">
+    <h2>Tips for the Trip</h2>
+
+    @foreach (var tip in Model)
+    {
+        <div class="my-left-aside-card">
+            <h3 class="card-tip-title">@tip[0]</h3>
+            <p class="card-tip-text">@tip[1]</p>
+        </div>
+    }
+</div>
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
         <h1 id="title">ASP.NET</h1>

@@ -13,6 +13,7 @@ namespace Traveling.Core.Repositories
 
         TEntity Get(int Id);
         IEnumerable<TEntity> GetAll();
+        int GetCount(TEntity entity);
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate); // this expression takes in a LAMDA expression and returns values based on the bool aspect
         TEntity SingleOrDefault(Expression<Func<TEntity, bool>> predicate);
 
