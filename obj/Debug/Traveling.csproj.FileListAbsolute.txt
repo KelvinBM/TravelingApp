@@ -84,3 +84,8 @@ C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_Pract
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.InitialModel.resources
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.csproj.GenerateResource.cache
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.InsertDataIntoTableTips.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.PopulateTravelCategoriesTable.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.DeleteColumnCountryFromTableGeographies.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.AddColumnCountryToTableGeographies.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.DeleteColumnContinentFromTableGeographies.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.ModifiedPropertyDescriptionFromTableDestinations.resources

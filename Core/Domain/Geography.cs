@@ -15,7 +15,7 @@ namespace Traveling.Core.Domain
 
         public int Id { get; set; }
         public string Country { get; set; }
-        public string Continent { get; set; }
+        //public string Continent { get; set; }
         public ICollection<Destination> Destinations { get; set; } 
 
     }

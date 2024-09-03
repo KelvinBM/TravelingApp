@@ -1,0 +1,29 @@
+﻿@model Traveling.ViewModels.NewDestinationViewModel
+
+@* model contains classes useful *@
+@* in order to be able to modify data, model to be worked on must be specified *@
+
+@{
+    ViewBag.Title = "AddDestination";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add Destination</h2>
+@*-- renders opening tag -- takes in the name of the target action that should be called when form is posted to site --*@
+@using (Html.BeginForm("CreateDestination", "Admin"))// TargetAction, ControllerName
+{
+    // at the end of 'using' block the object returned from the BeginForm method will be disposed and the disposing method renders the closing tag
+    <div class="my-form-group">
+        @Html.LabelFor(model => model.Destination.Name, new { @class = "my-label" })
+        @Html.TextBoxFor(model => model.Destination.Name, new { @class = "my-input" })
+    </div>
+    <div class="my-form-group">
+        @Html.LabelFor(model => model.Destination.Description, new { @class = "my-label my-text-area-label" })
+        @Html.TextAreaFor(model => model.Destination.Description, new { @class = "my-input  my-text-area" })
+    </div>
+    <div class="my-form-group">
+        @Html.LabelFor(model => model.Destination.Categories, new { @class = "my-label" })
+        @Html.DropDownListFor(model => model.Destination.Categories, new SelectList(Model.Categories, "Id", "Name"), "Select Membership Type", new { @class = "my-select"})
+    </div>
+    <button type="submit" class="my-button my-button-primary">Save</button>
+}

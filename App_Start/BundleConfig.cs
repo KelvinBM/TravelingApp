@@ -23,7 +23,10 @@ namespace Traveling
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/MyCss/my-css-file.css"));
+                      //"~/Content/bootstrap-lumen.css",
+                      //"~/Context/Site.css",
+                      "~/Content/MyCss/my-css-file.css",
+                      "~/Content/MyCss/my-forms.css"));
         }
     }
 }

@@ -15,8 +15,8 @@ namespace Traveling.Persistence.EntityConfigurations
             Property(g => g.Country)
                 .IsRequired();
 
-            Property(g => g.Continent)
-                .IsRequired();
+            //Property(g => g.Continent)
+            //    .IsRequired();
 
             //HasMany(g => g.Destinations) // I set this relationship on the DestionationConfiguration
             //    .WithRequired(d => d.Geography)

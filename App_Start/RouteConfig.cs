@@ -12,7 +12,7 @@ namespace Traveling
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.MapMvcAttributeRoutes();// enables attribute routing / modifyable routes to controllers using annotations
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

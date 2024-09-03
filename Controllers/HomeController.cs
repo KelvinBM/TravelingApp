@@ -12,19 +12,22 @@ namespace Traveling.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly IUnitOfWork _unitOfWork;// require an instance of the interface to access the values from tables
+        //private readonly IUnitOfWork _unitOfWork;// require an instance of the interface to access the values from tables // not working in methods
         private readonly TravelAppContext _context = new TravelAppContext();
+       
         public HomeController()
         {
             //_unitOfWork = unitOfWork;
-            
         }
 
+        // Url: Home/Index
         public ActionResult Index()
         {
             var tips = _context.Tips;
             return View(tips);
         }
+
+
 
         public ActionResult About()
         {
@@ -39,5 +42,7 @@ namespace Traveling.Controllers
 
             return View();
         }
+
+        // Url: Home/AddDestination // View: AddDestionation
     }
 }
