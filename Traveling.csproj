@@ -188,6 +188,10 @@
     <Compile Include="Migrations\202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.designer.cs">
       <DependentUpon>202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409041356381_ModifiedMaxLengthOfColumnDescriptionFromTableDestinations.cs" />
+    <Compile Include="Migrations\202409041356381_ModifiedMaxLengthOfColumnDescriptionFromTableDestinations.designer.cs">
+      <DependentUpon>202409041356381_ModifiedMaxLengthOfColumnDescriptionFromTableDestinations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\EntityConfigurations\DestinationConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\GeographyConfiguration.cs" />
@@ -331,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.resx">
       <DependentUpon>202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041356381_ModifiedMaxLengthOfColumnDescriptionFromTableDestinations.resx">
+      <DependentUpon>202409041356381_ModifiedMaxLengthOfColumnDescriptionFromTableDestinations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

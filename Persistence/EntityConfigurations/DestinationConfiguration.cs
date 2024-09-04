@@ -19,7 +19,7 @@ namespace Traveling.Persistence.EntityConfigurations
 
             Property(d => d.Description)
                 .IsRequired()
-                .HasMaxLength(260);
+                .HasMaxLength(190);
 
             Property(d => d.DateAdded)
                 .IsOptional();
