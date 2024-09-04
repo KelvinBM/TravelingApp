@@ -24,28 +24,31 @@ namespace Traveling.Persistence.EntityConfigurations
             Property(d => d.DateAdded)
                 .IsOptional();
 
-            HasMany(d => d.Categories) // has many categories
-                .WithMany(categories => categories.Destinations)
-                .Map(mapping =>
-                {
-                    mapping.ToTable("LocationCategories");
-                    mapping.MapLeftKey("DestinationId");
-                    mapping.MapRightKey("CategoryId");
-                });
+            //HasMany(d => d.Categories) // has many categories
+            //    .WithMany(categories => categories.Destinations)
+            //    .Map(mapping =>
+            //    {
+            //        mapping.ToTable("LocationCategories");
+            //        mapping.MapLeftKey("DestinationId");
+            //        mapping.MapRightKey("CategoryId");
+            //    });
 
-            HasRequired(d => d.Geography)// each destination has a geography
-                .WithMany(g => g.Destinations)// each geography has many destinations
-                .HasForeignKey(d => d.GeographyId)// the foreign key is...
+            HasRequired(d => d.Category)
+                .WithMany(c => c.Destinations)
+                .HasForeignKey(d => d.CategoryId)
                 .WillCascadeOnDelete(false);
 
-            HasMany(d => d.Categories)
-                .WithMany(c => c.Destinations)
-                .Map(m =>
-                {
-                    m.ToTable("DestinationCategories");
-                    m.MapLeftKey("DestinationId");
-                    m.MapRightKey("CategoryId");
-                });
+            //HasRequired(d => d.Geography)// each destination has a geography
+            //    .WithMany(g => g.Destinations)// each geography has many destinations
+            //    .HasForeignKey(d => d.GeographyId)// the foreign key is...
+            //    .WillCascadeOnDelete(false);
+
+            //HasOptional(d => d.Geography)// each destination has a geography
+            //    .WithMany(g => g.Destinations)// each geography has many destinations
+            //    .HasForeignKey(d => d.GeographyId)// the foreign key is...
+            //    .WillCascadeOnDelete(false);
+
+
         }
     }
 }

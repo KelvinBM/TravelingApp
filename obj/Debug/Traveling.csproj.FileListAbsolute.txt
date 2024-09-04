@@ -89,3 +89,8 @@ C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_Pract
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.AddColumnCountryToTableGeographies.resources
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.DeleteColumnContinentFromTableGeographies.resources
 C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.ModifiedPropertyDescriptionFromTableDestinations.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.DeleteColumnCategoriesFromTableDestinations.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.CreatedColumnCategoryOnTableDestinations.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.MadeColumnGeographyOptionalOnTableDestinations.resources
+C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling\obj\Debug\Traveling.Migrations.DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.resources

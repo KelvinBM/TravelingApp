@@ -10,13 +10,13 @@ namespace Traveling.Core.Domain
 
         public Geography()
         {
-            Destinations = new HashSet<Destination>();
+            //Destinations = new HashSet<Destination>();
         }
 
         public int Id { get; set; }
         public string Country { get; set; }
         //public string Continent { get; set; }
-        public ICollection<Destination> Destinations { get; set; } 
+        //public ICollection<Destination> Destinations { get; set; } 
 
     }
 }

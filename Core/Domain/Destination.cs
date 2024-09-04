@@ -10,16 +10,19 @@ namespace Traveling.Core.Domain
     {
         public Destination()
         {
-            Categories = new HashSet<TravelCategory>();
+            //Categories = new HashSet<TravelCategory>();
         }
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
-        [DisplayName("Travel Category")]// [Display(Name = "Travel Categories)] //
-        public ICollection<TravelCategory> Categories { get; set; }
-        public Geography Geography { get; set; }
-        public int GeographyId { get; set; }
+        //[DisplayName("Travel Category")]// [Display(Name = "Travel Categories)] //
+        //public ICollection<TravelCategory> Categories { get; set; }
+
+        public TravelCategory Category { get; set; }
+        public int CategoryId { get; set; }// foreign key
+        //public Geography Geography { get; set; }
+        //public int GeographyId { get; set; }
         public DateTime? DateAdded { get; set; }
         
     }

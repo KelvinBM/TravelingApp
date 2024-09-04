@@ -168,6 +168,26 @@
     <Compile Include="Migrations\202409032031397_ModifiedPropertyDescriptionFromTableDestinations.designer.cs">
       <DependentUpon>202409032031397_ModifiedPropertyDescriptionFromTableDestinations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409041243169_DeleteColumnCategoriesFromTableDestinations.cs" />
+    <Compile Include="Migrations\202409041243169_DeleteColumnCategoriesFromTableDestinations.designer.cs">
+      <DependentUpon>202409041243169_DeleteColumnCategoriesFromTableDestinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409041245063_CreatedColumnCategoryOnTableDestinations.cs" />
+    <Compile Include="Migrations\202409041245063_CreatedColumnCategoryOnTableDestinations.designer.cs">
+      <DependentUpon>202409041245063_CreatedColumnCategoryOnTableDestinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409041249245_RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.cs" />
+    <Compile Include="Migrations\202409041249245_RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.designer.cs">
+      <DependentUpon>202409041249245_RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409041259473_MadeColumnGeographyOptionalOnTableDestinations.cs" />
+    <Compile Include="Migrations\202409041259473_MadeColumnGeographyOptionalOnTableDestinations.designer.cs">
+      <DependentUpon>202409041259473_MadeColumnGeographyOptionalOnTableDestinations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.cs" />
+    <Compile Include="Migrations\202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.designer.cs">
+      <DependentUpon>202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\EntityConfigurations\DestinationConfiguration.cs" />
     <Compile Include="Persistence\EntityConfigurations\GeographyConfiguration.cs" />
@@ -296,6 +316,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202409032031397_ModifiedPropertyDescriptionFromTableDestinations.resx">
       <DependentUpon>202409032031397_ModifiedPropertyDescriptionFromTableDestinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041243169_DeleteColumnCategoriesFromTableDestinations.resx">
+      <DependentUpon>202409041243169_DeleteColumnCategoriesFromTableDestinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041245063_CreatedColumnCategoryOnTableDestinations.resx">
+      <DependentUpon>202409041245063_CreatedColumnCategoryOnTableDestinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041249245_RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.resx">
+      <DependentUpon>202409041249245_RemovedCascadeDeleteFromColumnCategoryOnTableDestinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041259473_MadeColumnGeographyOptionalOnTableDestinations.resx">
+      <DependentUpon>202409041259473_MadeColumnGeographyOptionalOnTableDestinations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.resx">
+      <DependentUpon>202409041333352_DeleteColumnGeographyFromTableDesntinationsAndColumnDestinationsFromTableGeographies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
