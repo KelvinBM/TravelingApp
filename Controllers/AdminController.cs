@@ -28,7 +28,7 @@ namespace Traveling.Controllers
         public ActionResult AddDestination()
         {
             var categories = _context.TravelCategories.ToList();
-            var viewModel = new NewDestinationViewModel
+            var viewModel = new NewDestinationViewModel //created new object and passed the categories so they can be accessed through the model
             {
                 Categories = categories
             };
@@ -43,6 +43,7 @@ namespace Traveling.Controllers
             //      - can pass either viewModel or actually requested datatype
             //      - allows creating data request
             //      - entity framework uses properties passed through form to initialize this parameter 'viewModel'
+            destination.DateAdded = DateTime.Now.Date;
             _context.Destinations.Add(destination);
             _context.SaveChanges();
 

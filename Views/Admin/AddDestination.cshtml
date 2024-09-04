@@ -8,22 +8,37 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Add Destination</h2>
+@*<p>@DateTime.Now.Date.ToShortDateString()</p>*@
+<div class="my-admin-container">
+    <aside class="my-admin-left-aside-container">
+    </aside>
+    <div class="my-admin-forms-container">
+        <div class="my-form-container">
+            <h2 class="my-form-title">Add Destination</h2>
+            @using (Html.BeginForm("CreateDestination", "Admin"))// TargetAction, ControllerName
+            {
+                // at the end of 'using' block the object returned from the BeginForm method will be disposed and the disposing method renders the closing tag
+                <div id="my-destination-name" class="my-form-group">
+                    @Html.LabelFor(model => model.Destination.Name, new { @class = "my-label" })
+                    @Html.TextBoxFor(model => model.Destination.Name, new { @class = "my-input" })
+                </div>
+                <div id="my-destination-desc" class="my-form-group">
+                    @Html.LabelFor(model => model.Destination.Description, new { @class = "my-label my-text-area-label" })
+                    @Html.TextAreaFor(model => model.Destination.Description, new { @class = "my-input  my-text-area" })
+                </div>
+                <div id="my-destination-category" class="my-form-group">
+                    @Html.LabelFor(viewModel => viewModel.Destination.CategoryId, new { @class = "my-label" })
+                    @Html.DropDownListFor(viewModel => viewModel.Destination.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Membership Type", new { @class = "my-select" })
+                </div>
+                <div id="my-destination-empty">
+                    <p>empty for now</p>
+                </div>
+                <button type="submit" id="my-destination-submit" class="my-button my-button-primary">Save</button>
+            }
+        </div>
+    </div>
+</div>
+
+
 @*-- renders opening tag -- takes in the name of the target action that should be called when form is posted to site --*@
-@using (Html.BeginForm("CreateDestination", "Admin"))// TargetAction, ControllerName
-{
-    // at the end of 'using' block the object returned from the BeginForm method will be disposed and the disposing method renders the closing tag
-    <div class="my-form-group">
-        @Html.LabelFor(model => model.Destination.Name, new { @class = "my-label" })
-        @Html.TextBoxFor(model => model.Destination.Name, new { @class = "my-input" })
-    </div>
-    <div class="my-form-group">
-        @Html.LabelFor(model => model.Destination.Description, new { @class = "my-label my-text-area-label" })
-        @Html.TextAreaFor(model => model.Destination.Description, new { @class = "my-input  my-text-area" })
-    </div>
-    <div class="my-form-group">
-        @Html.LabelFor(model => model.Destination.CategoryId, new { @class = "my-label" })
-        @Html.DropDownListFor(model => model.Destination.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Membership Type", new { @class = "my-select"})
-    </div>
-    <button type="submit" class="my-button my-button-primary">Save</button>
-}
+
