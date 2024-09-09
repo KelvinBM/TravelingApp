@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Traveling.Core;
 using Traveling.Core.Domain;
 using Traveling.Persistence;
+using Traveling.ViewModels;
 
 namespace Traveling.Controllers
 {
@@ -23,7 +24,14 @@ namespace Traveling.Controllers
         // Url: Home/Index
         public ActionResult Index()
         {
-            var tips = _context.Tips;
+            var tips = _context.Tips.ToList();
+            //var destinations = 
+
+            var viewModel = new HomeViewModel
+            {
+                //Destinations = 
+            };
+
             return View(tips);
         }
 
