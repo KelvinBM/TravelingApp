@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Activation;
 using System.Web;
 
 namespace Traveling.Core.Domain
@@ -25,6 +27,8 @@ namespace Traveling.Core.Domain
         //public Geography Geography { get; set; }
         //public int GeographyId { get; set; }
         public DateTime? DateAdded { get; set; }
+        
+        public string Image { get; set; }
 
         // need to add a column for image link or source //
         

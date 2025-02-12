@@ -258,9 +258,9 @@ body {
     padding-top: 10px;
     padding-left: 15px;
     height: 145px;
-    color: #e7e7e7;
-    display: flex;
-    gap: 5px;
+    color: black;
+/*    display: flex;
+*/    gap: 5px;
 }
 
 .my-section-card .titles-container {

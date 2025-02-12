@@ -24,15 +24,17 @@ namespace Traveling.Controllers
         // Url: Home/Index
         public ActionResult Index()
         {
+            var categories = _context.TravelCategories.Include(tc => tc.Destinations).ToList();// using eager loading to load related objects of TravelCategories(Destinations)
             var tips = _context.Tips.ToList();
             //var destinations = 
 
             var viewModel = new HomeViewModel
             {
-                //Destinations = 
+                Categories = categories,
+                Tips = tips
             };
 
-            return View(tips);
+            return View(viewModel);
         }
 
 

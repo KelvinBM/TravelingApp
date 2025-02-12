@@ -102,12 +102,13 @@
     height: 145px;
     color: #e7e7e7;
     display: flex;
+    flex-direction: column;
     gap: 5px;
 }
 
 .my-section-card .titles-container {
-    display: flex;
-    flex-direction: column;
+/*    display: flex;
+    flex-direction: column;*/
     justify-content: space-between;
     box-sizing: border-box;
     padding-bottom: 7px;

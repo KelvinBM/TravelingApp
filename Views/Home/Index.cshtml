@@ -1,4 +1,4 @@
-﻿@*the model must be at the top of the page*@
+﻿@model Traveling.ViewModels.HomeViewModel
 @* the model must be the one that the controller is refering to *@
 
 @{
@@ -9,7 +9,7 @@
 <div class="my-home-container">
     <div class="my-left-aside-container">
         <h2>Tips for the Trip</h2>
-        @foreach (var tip in Model)
+        @foreach (var tip in Model.Tips)
         {
             <div class="my-left-aside-card">
                 <h3 class="card-tip-title">@tip.Title</h3>
@@ -22,67 +22,38 @@
     <main class="my-main-section">
 
         <h2 class="my-section-title">Travel locations</h2>
-        <section class="my-section-container">
-            @foreach (var category in Model)
+
+        @foreach (var category in Model.Categories)
+        {
+            var destinationsCount = category.Destinations.Count();
+
+            if (!(destinationsCount == 0) && destinationsCount > 3)
             {
-  
+                <section class="my-section-container">
+                    <h3 id="my-travel-category-1">@category.Name</h3>
+                    <div class="my-travel-section">
+                        @{ 
+                            string linkText;
+                        }
+                        @foreach (var destination in category.Destinations)
+                        {
+                            @Html.ActionLink("Destination Link", "Index", "DestinationsController", new { Id = destination.Id }, null);
+                            <a class="my-clickable-card-container" href="#">
+                                <article class="my-section-card">
+                                    <img src="@destination.Image">
+                                    <div class="card-body">
+                                        <div class="titles-container">
+                                            <h4>@destination.Name</h4>
+                                        </div>
+                                        <p>@destination.Description</p>
+                                    </div>
+                                </article>
+                            </a>
+                        }
+                    </div>
+                </section>
             }
-
-            <h3 id="my-travel-category-1">Category 1</h3>
-            <div class="my-travel-section">
-                <a class="my-clickable-card-container" href="#">
-                    <article class="my-section-card">
-                        <img src="images/travel/venice.jpeg">
-                        <div class="card-body">
-                            <div class="titles-container">
-                                <h4>Travel Destination Name</h4>
-                                <h5>Location is over at this</h5>
-                            </div>
-                            <p>lorem ipsun dolore a das hagen das asdasd asd asd adsad  asdasd dsasd dsf aaer dfadf rewer afachocolate chip icecream is delicious and also.</p>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </section>
-
-
-
-
-        <section class="my-section-container">
-            <h3 id="my-travel-category-2">Category 2</h3>
-            <div class="my-travel-section">
-                <a class="my-clickable-card-container" href="#">
-                    <article class="my-section-card">
-                        <img src="images/travel/beach-volcanoe.jpeg">
-                        <div class="card-body">
-                            <div class="titles-container">
-                                <h4>Travel Destination Name</h4>
-                                <h5>Location is over at this</h5>
-                            </div>
-                            <p>lorem ipsun dolore a das hagen das chocolate chip icecream is delicious and also</p>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </section>
-
-        <section class="my-section-container">
-            <h3 id="my-travel-category-3">Category 3</h3>
-            <div class="my-travel-section">
-                <a class="my-clickable-card-container" href="#">
-                    <article class="my-section-card">
-                        <img src="images/travel/australia.jpeg">
-                        <div class="card-body">
-                            <div class="titles-container">
-                                <h4>Travel Destination Name</h4>
-                                <h5>Location is over at this</h5>
-                            </div>
-                            <p>lorem ipsun dolore a das hagen das chocolate chip icecream is delicious and also</p>
-                        </div>
-                    </article>
-                </a>
-            </div>
-        </section>
+        }
     </main>
     <div class="my-slideshow-container"></div>
 </div>

@@ -9,8 +9,8 @@ namespace Traveling.ViewModels
 {
     public class HomeViewModel
     {
-        public IEnumerable<TravelCategory> Categories { get; set; }
-        public IEnumerable<Destination> Destinations { get; set; }
+        //public IEnumerable<Destination> Destinations { get; set; }
+        public List<TravelCategory> Categories { get; set; }
         public IEnumerable<Tip> Tips { get; set; }
 
     }

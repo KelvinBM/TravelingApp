@@ -24,6 +24,9 @@ namespace Traveling.Persistence.EntityConfigurations
             Property(d => d.DateAdded)
                 .IsOptional();
 
+            Property(destination => destination.Image)
+                .IsOptional();
+
             //HasMany(d => d.Categories) // has many categories
             //    .WithMany(categories => categories.Destinations)
             //    .Map(mapping =>
