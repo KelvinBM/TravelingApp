@@ -1,0 +1,66 @@
+﻿@media (max-width: 1528px) {
+/*    .my-card:nth-child(3n) {
+        display: none;
+    }*/
+
+    .my-travel-section {
+        max-width: 1140px;
+        overflow-x: auto;
+        padding: 15px 5px;
+    }
+}
+
+@media (max-width: 1390px) {
+    main {
+        max-width: 1030px;
+    }
+
+    .my-travel-section {
+        max-width: inherit;
+    }
+    .my-clickable-card-container:nth-child(3n) {
+        /*display: none;*/
+    }
+}
+
+@media (max-width: 1225px) {
+    main {
+        max-width: 865px;
+    }
+    .my-section-title-hr {
+        max-width: inherit;
+    }
+
+    .my-clickable-card-container:nth-child(3n) {
+        /*display: none;*/
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 640px;
+    }
+
+    .my-home-container {
+        grid-template-rows: 150px 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .my-left-aside-container {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-height: 150px;
+        max-width: inherit;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+
+
+    .my-main-section {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+}

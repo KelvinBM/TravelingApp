@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Traveling.Core.Domain;
 using Traveling.Persistence;
+using Traveling.Persistence.Repositories;
 
 namespace Traveling.Controllers
 {
@@ -12,16 +13,20 @@ namespace Traveling.Controllers
     {
         private readonly TravelAppContext _context = new TravelAppContext();
         // GET: Destinations
-        public ActionResult Index(int destinationId)
+        public ActionResult Index()
         {
-            List<Destination> destinations = _context.Destinations.ToList();
-            // need to relearn almost everything since I kinda forgot :)
             return View();
         }
+        //public ActionResult Index()// cannot have parameter
+        //{
+        //    return View();
+        //}
 
         public ViewResult DestinationInfo(int destinationId)
         {
-            return View(destinationId);
+            var destination = _context.Destinations.SingleOrDefault(d => d.Id == destinationId);
+            return View(destination);
         }
+
     }
 }

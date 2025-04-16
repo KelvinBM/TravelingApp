@@ -22,11 +22,13 @@ namespace Traveling
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/MyCss").Include(
                       "~/Content/bootstrap-lumen.css",
                       "~/Context/Site.css",
                       "~/Content/MyCss/my-css-file.css",
-                      "~/Content/MyCss/my-forms.css"));
+                      "~/Content/MyCss/my-forms.css",
+                      "~/Content/MyCss/home-media.css",
+                      "~/Content/MyCss/destinations/carousel.css"));
         }
     }
 }

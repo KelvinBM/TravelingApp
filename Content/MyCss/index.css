@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 10px;
+    background-color: #B7F7F7;
 }
 
 .card-tip-title {
@@ -63,6 +64,11 @@
     padding: 15px;
     flex-wrap: wrap;
     gap: 25px;
+}
+
+.my-section-title-hr {
+    width: 1000px;
+    font-size: 10px;
 }
 
 .my-clickable-card-container {

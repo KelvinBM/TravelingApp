@@ -261,7 +261,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\MyCss\destinations\carousel.css" />
     <Content Include="Content\MyCss\index.css" />
+    <Content Include="Content\MyCss\home-media.css" />
     <Content Include="Content\MyCss\my-admin.css" />
     <Content Include="Content\MyCss\my-css-file.css" />
     <Content Include="Content\MyCss\my-forms.css" />
@@ -271,6 +273,18 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\travel\australia.jpeg" />
+    <Content Include="images\travel\beach-volcanoe.jpeg" />
+    <Content Include="images\travel\beijing.jpeg" />
+    <Content Include="images\travel\canada.jpeg" />
+    <Content Include="images\travel\canoos.jpeg" />
+    <Content Include="images\travel\egypt.jpeg" />
+    <Content Include="images\travel\florida.jpeg" />
+    <Content Include="images\travel\germany.jpeg" />
+    <Content Include="images\travel\japan.jpeg" />
+    <Content Include="images\travel\los-angeles.jpeg" />
+    <Content Include="images\travel\paris.jpeg" />
+    <Content Include="images\travel\venice.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -306,12 +320,14 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddDestination.cshtml" />
     <Content Include="Views\Destinations\Index.cshtml" />
+    <Content Include="Views\Destinations\DestinationInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\Api\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\MyScripts\" />
+    <Folder Include="Scripts\MyScripts\carousels\" />
+    <Folder Include="Scripts\MyScripts\jumbotrons\" />
     <Folder Include="Views\Tip\" />
   </ItemGroup>
   <ItemGroup>

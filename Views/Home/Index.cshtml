@@ -19,41 +19,47 @@
     </div>
 
     @* templates for each card in each category section *@
-    <main class="my-main-section">
+<main class="my-main-section">
 
-        <h2 class="my-section-title">Travel locations</h2>
+    <h2 class="my-section-title">Travel locations</h2>
+    <hr class="my-section-title-hr" />
 
-        @foreach (var category in Model.Categories)
+
+    @foreach (var category in Model.Categories)
+    {
+        var destinationsCount = category.Destinations.Count();
+
+        if (!(destinationsCount == 0))
         {
-            var destinationsCount = category.Destinations.Count();
-
-            if (!(destinationsCount == 0) && destinationsCount > 3)
-            {
-                <section class="my-section-container">
-                    <h3 id="my-travel-category-1">@category.Name</h3>
-                    <div class="my-travel-section">
-                        @{ 
-                            string linkText;
-                        }
-                        @foreach (var destination in category.Destinations)
-                        {
-                            @Html.ActionLink("Destination Link", "Index", "DestinationsController", new { Id = destination.Id }, null);
-                            <a class="my-clickable-card-container" href="#">
-                                <article class="my-section-card">
-                                    <img src="@destination.Image">
-                                    <div class="card-body">
-                                        <div class="titles-container">
-                                            <h4>@destination.Name</h4>
-                                        </div>
-                                        <p>@destination.Description</p>
+            <section class="my-section-container">
+                <hr class="my-travel-section-hr" />
+                
+                <h3 class="my-travel-category">@category.Name</h3>
+                <div class="my-travel-section">
+                    @{
+                        string linkText;
+                    }
+                    @foreach (var destination in category.Destinations)
+                    {
+                        @*@Html.ActionLink("Card link", "Index", "Destinations", new {}, new {id=1})*@
+                        int id = destination.Id;
+                        string cardId = "card-" + id;
+                        <a class="my-clickable-card-container my-card" href="/Destinations/DestinationInfo?destinationId=@id">
+                            <article class="my-section-card">
+                                <img src="@destination.Image">
+                                <div class="card-body">
+                                    <div class="titles-container">
+                                        <h4>@destination.Name</h4>
                                     </div>
-                                </article>
-                            </a>
-                        }
-                    </div>
-                </section>
-            }
+                                    <p>@destination.Description</p>
+                                </div>
+                            </article>
+                        </a>
+                    }
+                </div>
+            </section>
         }
-    </main>
-    <div class="my-slideshow-container"></div>
+    }
+</main>
+    @*<div class="my-slideshow-container"></div>*@
 </div>
