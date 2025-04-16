@@ -22,6 +22,8 @@ body {
     width: 100%;
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbf0df;
+    /*background-color: #F2FAF9;*/
 }
 
 /*** NavBar ***/
@@ -32,7 +34,7 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     position: fixed;
-    box-shadow: 0 0 35px black;
+/*    box-shadow: 0 0 35px black;*/
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +115,10 @@ body {
 /*** Index/Home & _Layout ***/
 .my-main-container {
     margin-top: 95px;
-    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px 15px 15px;
+    margin-bottom: 15px;
     box-sizing: border-box;
     width: inherit;
 }
@@ -179,11 +184,11 @@ body {
 
 .my-main-section {
     grid-column-start: 2;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .my-main-section h2 {
@@ -194,13 +199,32 @@ body {
     width: 100%;
 }
 
+.my-section-title-hr {
+    width: 1000px;
+    height: 5px;
+    background-color: #2e536e;
+    border: none;
+}
+
 .my-section-container {
     padding: 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-top: 2px solid #ee8e8e;
+    /*border-top: 2px solid #ee8e8e;*/
+    max-width: inherit;
+    /*background-color: #FFF8ED;*/
+    /*border: 1px solid black;*/
 }
+
+.my-section-container:nth-of-type(1n) .card-body {
+    background-color: #efecec;
+}
+
+.my-section-container:nth-of-type(2n) .card-body {
+    background-color: #fef7f7;
+}
+
 
 .my-section-container h3 {
     font-size: 30px;
@@ -208,7 +232,7 @@ body {
     font-family: serif;
     width: fit-content;
     padding: 2px 0;
-    padding-top: 100px;
+    padding-top: 10px;
     border-radius: 10px;
     color: rgb(2, 7, 31);
     margin-bottom: 10px;
@@ -219,8 +243,19 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 25px;
+    max-width: auto;
+    overflow-x: auto;
+}
+
+.my-travel-section-hr {
+    width: 98%;
+    height: 3px;
+    background-color: #ee8e8e;
+    border: none;
+    margin: 20px 0;
+    align-self: center;
 }
 
 .my-clickable-card-container {
@@ -255,8 +290,8 @@ body {
     background-color: white;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
-    padding-top: 10px;
-    padding-left: 15px;
+    padding: 15px 8px 8px 10px;
+    /*padding: 15px;*/
     height: 145px;
     color: black;
 /*    display: flex;
