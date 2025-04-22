@@ -1,1 +1,17 @@
 ﻿
+.top-content {
+    width: inherit;
+    height: 560px;
+    display: flex;
+    /*background-color: red;*/
+    justify-content: center;
+}
+
+.slideshow-container {
+    width: 560px;
+    height: 500px;
+    padding: 0;
+    object-fit: cover;
+    align-self: center;
+
+}
