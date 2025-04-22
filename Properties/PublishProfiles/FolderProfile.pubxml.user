@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\kmejia\kelvin\01 - Courses\Udemy\Entity Framework\02-CodeFirst\00_PracticeProjects\Traveling</_PublishTargetUrl>
-    <History>True|2025-04-18T16:53:14.6844491Z;True|2025-04-16T14:57:39.8758326-04:00;</History>
+    <History>True|2025-04-22T20:16:47.2086383Z;True|2025-04-18T12:53:14.6844491-04:00;True|2025-04-16T14:57:39.8758326-04:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -232,10 +232,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/27/2022 23:42:50</publishTime>
     </File>
     <File Include="bin/Traveling.dll">
-      <publishTime>04/18/2025 12:53:13</publishTime>
+      <publishTime>04/22/2025 16:16:45</publishTime>
     </File>
     <File Include="bin/Traveling.pdb">
-      <publishTime>04/18/2025 12:53:13</publishTime>
+      <publishTime>04/22/2025 16:16:45</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 12:57:34</publishTime>
@@ -444,6 +444,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Scripts/bootstrap.min.js.map">
       <publishTime>08/21/2024 15:11:47</publishTime>
     </File>
+    <File Include="Scripts/jquery-3.4.1.intellisense.js">
+      <publishTime>08/21/2024 15:11:51</publishTime>
+    </File>
     <File Include="Scripts/jquery-3.4.1.js">
       <publishTime>08/21/2024 15:11:49</publishTime>
     </File>
@@ -461,6 +464,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Scripts/jquery-3.4.1.slim.min.map">
       <publishTime>08/21/2024 15:11:49</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate-vsdoc.js">
+      <publishTime>08/21/2024 15:11:53</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>08/21/2024 15:11:53</publishTime>
@@ -482,6 +488,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="Scripts/MyScripts/home/card-images.js">
       <publishTime>04/18/2025 09:52:07</publishTime>
+    </File>
+    <File Include="ViewModels/HomeViewModel.cs">
+      <publishTime>10/08/2024 16:48:57</publishTime>
+    </File>
+    <File Include="ViewModels/NewDestinationViewModel.cs">
+      <publishTime>09/03/2024 16:06:25</publishTime>
     </File>
     <File Include="Views/Admin/AddDestination.cshtml">
       <publishTime>09/09/2024 16:44:19</publishTime>
